@@ -1,0 +1,9 @@
+# This program demonstrates how to create a simple message in Python and print it to the console 
+# and also overwrite it and print a new message.
+
+simple_message = "My Name is Paul and I swim like a fish !"
+print(simple_message)
+
+simple_message ="And his name is Dave and he also swims like a fish !"
+print(simple_message)
+

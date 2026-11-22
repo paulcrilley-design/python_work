@@ -1,0 +1,21 @@
+# This shows various examples of using the if-elif-else statement
+
+age = 70
+if age <4 : # This is the first condition of the if statement
+    print("Your admission cost is $0.") 
+    price = 0
+elif age < 18: # This is the second condition of the if statement 
+    print("Your admission cost is $25")
+    price = 25
+elif age > 65:
+    print("Your admission cost is $20")
+    price = 20
+else: # This is the last condition of the if statement 
+    print("Your admission cost is $40")
+    price = 40
+
+print(f"\nYour admission cost is ${price}")
+      
+
+
+

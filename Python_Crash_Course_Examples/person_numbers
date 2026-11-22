@@ -1,0 +1,11 @@
+# This is an example of storing a persons detail and favourite number in a dictionary
+
+person = {"first_name": "paul",
+          "last_name": "crilley",
+          "age": 60,
+          "favourite_number": 7,
+          "born_city": "Glasgow",
+          "current_city": "Pattaya",
+          }
+
+print(f"\n{person['first_name'].title()} {person['last_name'].title()} is {person['age']} years old, was born in {person['born_city']}, currently lives in {person['current_city']}, and their favourite number is {person['favourite_number']}.")

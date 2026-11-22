@@ -1,0 +1,42 @@
+# This is an example of the use of Tuples
+
+dimensions = (200,50)
+
+print(dimensions[0])   
+print(dimensions[1])
+
+# dimensions[0] = 250  # This will raise an error because tuples are immutable
+
+print("\nOriginal dimensions:")
+for dimension in dimensions:
+    print(f"\n{dimension}")
+
+dimensions = (400,100)  # This is valid because we are creating a new tuple
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(f"\n{dimension}")
+
+simple_foods = ("milk", "cheese", "bread", "eggs")
+print("\nSimple foods:")
+for food in simple_foods:
+    print(food)
+
+simple_foods = list(simple_foods)  # Convert tuple to list
+simple_foods.pop(-1)  # Remove the last item from the list
+simple_foods = tuple(simple_foods)  # Convert list back to tuple
+print("\nUpdated simple foods after removing the last item:")
+for food in simple_foods:
+    print(food)
+
+
+new_food = "butter"
+simple_foods = simple_foods + (new_food,)  # Add a new food item to the tuple
+print("\nUpdated simple foods:") # print the updated tuple
+for food in simple_foods:
+    print(food)
+
+new_food = ("yogurt", "cream", "ice cream")
+simple_foods = simple_foods + new_food
+print("\nExtended simple foods:")
+for food in simple_foods:
+    print(food)

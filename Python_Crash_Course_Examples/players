@@ -1,0 +1,53 @@
+# Will comment later
+
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+
+print(list(range(1, 5)))  # Prints the list of numbers from 1 to 4
+
+print(players[0:3])  # Prints the first three players in the list
+print(players[1:4])  # Prints the second through fourth players in the list
+print(players[:4])  # Prints the first four players in the list
+print(players[2:5])  # Prints the third through fifth players in the list
+print(players[2:])  # Prints the third through last players in the list
+print(players[-3:])  # Prints the last three players in the list
+print(players[-1]) # Prints the last player in the list
+print(players[-2]) # Prints the second to last player in the list
+print(players[1:5:3])  # Prints the second and fifth players in the list (skipping two players in between)
+
+print("Here are the players on my team:")
+for player in players[-3:]:  # Loops through the last three players in the list
+    print(player.title())  # Prints each player's name with the first letter capitalized    
+
+people = [
+    {
+        'first': 'charles',
+        'last': 'darwin',
+        'position': 'forward',
+    },
+    {
+        'first': 'martina',
+        'last': 'navratilova',
+        'position': 'midfielder',
+    },
+    {
+        'first': 'michael',
+        'last': 'jordan',
+        'position': 'guard',
+    },
+    {
+        'first': 'florence',
+        'last': 'griffith',
+        'position': 'striker',
+    },
+    {
+        'first': 'eli',
+        'last': 'manning',
+        'position': 'quarterback',
+    },
+]
+for person in people:
+    full_name = f"{person['first'].title()} {person['last'].title()}"
+    position = person['position'].title()
+    print(f"Player: {full_name}")
+    print(f"\tPosition: {position}\n")
+

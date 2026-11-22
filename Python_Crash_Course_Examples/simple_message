@@ -1,0 +1,5 @@
+# This program demonstrates how to create a simple message in Python and print it to the console.
+
+simple_message = " My Name is Paul and I swim like a fish !"
+print(simple_message)
+

@@ -1,0 +1,42 @@
+# Example 1: Checking for equality
+car = 'subaru' # This is a variable that stores the name of the car
+print(f"\nIs car == 'subaru'? I predict True.") # This prints a message predicting that the car is 'subaru'
+if car == 'subaru': # This is an if statement that checks if the car is 'subaru'
+    print(car == 'subaru') # This prints a message if the car is 'subaru'
+
+# Example 2: Checking for inequality
+print(f"\nIs car == 'audi'? I predict False.") # This prints a message predicting that the car is not 'audi'
+if car == 'audi': # This is an if statement that checks if the car is 'audi'
+    print(car == 'audi') # This prints a message if the car is 'audi'
+else:
+    print("No, the car is not an audi.") # This prints a message if the car is not an audi
+
+# Example 3: Checking for equality and inequality with nested if statements
+cars = ['auDi', 'bmw', 'suBaru', 'toYota', 'foRd', 'merCedes', 'wiLlys jeep', 'subaRu'] # This is a list of cars
+old_car = 'e-type-jaguar' # This is a variable that stores the name of the car
+cars.append(old_car) # This adds the old car to the list of cars
+print(f"\n") # This prints a blank line for readability
+for car in cars:
+    if car.lower() == 'bmw': # This is an if statement that checks if the car is 'bmw'
+        print(f"{car.upper()}") # This prints the car name in uppercase if it is 'bmw'
+    else: 
+        print(f"{car.title()}") # This prints the car name in title case if it is not 'bmw' or 'e-type-jaguar'
+    if car.lower() == old_car.lower(): # This is an if statement that checks if the car is 'e-type-jaguar'
+        print(f"\n{car.lower()} is in the list" ) # This prints the car name in title case if it is 'e-type-jaguar'
+if old_car.lower() not in [car.lower() for car in cars]: # This is an if statement that checks if the car is not 'e-type-jaguar'
+    print(f"{old_car.lower()}" ) # this confirms that the car is not in the list and prints a message indicating that it is not in the list    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+

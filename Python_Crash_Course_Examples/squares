@@ -1,0 +1,39 @@
+#
+#
+squares = []  # Create an empty list to hold the squares of numbers
+for value in range(1, 11):  # This will iterate from 1 to 10
+    square = value ** 2  # Calculate the square of the current value
+    squares.append(square)  # Append the square to the list of squares
+print(squares)  # Print the list of squares 
+
+squares = []  # This is another way to create a list of squares using a for loop
+for value in range(1, 11):  # This will iterate from 1 to 10
+    squares.append(value**2)  # Append the square to the list of squares
+print(squares)  # Print the list of squares 
+
+squares = [value**2 for value in range(1, 12)]  # This is a list comprehension that creates a list of squares from 1 to 11
+print(squares)  # Print the list of squares
+
+Count_to_20 = list(range(1, 21))  # This will create a list of numbers from 1 to 20
+print(Count_to_20)  # Print the list of numbers from 1 to 20
+
+# Count_to_1M = list(range(1, 1000001))  # This will create a list of numbers from 1 to 1,000,000
+# print(Count_to_1M)  # Print the list of numbers from 1 to 1,000,000
+# print(min(Count_to_1M))  # Print the minimum value in the list (1)
+# print(max(Count_to_1M))  # Print the maximum value in the list (1,000,000)
+# print(sum(Count_to_1M))  # Print the sum of all the values in the list (500,000,500,000)
+
+odd_numbers = list(range(1, 21, 2))  # This will create a list of odd numbers from 1 to 20
+print(odd_numbers)  # Print the list of odd numbers
+
+multiples_of_3 = list(range(3, 31, 3))  # This will create a list of multiples of 3 from 3 to 30
+print(multiples_of_3)  # Print the list of multiples of 3
+
+cubes = []  # Create an empty list to hold the cubes of numbers
+for value in range(1, 11):  # This will iterate from 1 to 10
+    cube = value ** 3  # Calculate the cube of the current value
+    cubes.append(cube)  # Append the cube to the list of cubes
+print(cubes)  # Print the list of cubes 
+
+cubes = [value**3 for value in range(1, 11)]  # This is a list comprehension that creates a list of cubes from 1 to 10
+print(cubes)  # Print the list of cubes

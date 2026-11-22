@@ -1,0 +1,37 @@
+# This program demonstrates various string methods in Python, including title case, lower case, upper case, and stripping whitespace.
+
+first_name = "eric"
+last_name = "cantona"
+first_name = first_name.title()
+last_name = last_name.title()
+full_name = f"{first_name} {last_name}"
+
+message = f"Hello, {first_name}! Would you like to learn some Python today?"
+
+print(message)
+print(first_name.lower())
+print(last_name.lower())
+print(full_name.lower())
+print(first_name.upper())
+print(last_name.upper())
+print(full_name.upper())
+print(first_name.title())
+print(last_name.title())
+print(full_name.title())
+
+famous_quote_1 = f"{full_name} once said, 'When people succeed, it is because of hard work. Luck has nothing to do with success.'"
+print(famous_quote_1)
+
+famous_person = f"{full_name}"
+famous_quote_2 = f"{famous_person} once said, 'I am not a man of words, but a man of action.'"
+print(famous_quote_2)
+
+famous_person_2 = "   george best  "
+famous_quote_3 = f"{famous_person_2.strip()} once said, 'I am not a man of words, but a man of action.'"
+print(famous_quote_3)
+print(f"\n\t{famous_person_2.title().strip()}")
+
+# This section also demonstrates how to use the removeprefix() and removesuffix() string methods in Python.
+
+filename = "python_notes.txt"
+print(filename.removesuffix(".txt"))

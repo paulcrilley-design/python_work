@@ -1,0 +1,43 @@
+# This example will create and manipulate a list of aliens
+
+aliens = []
+for alien_number in range(30):
+    new_alien = {"number": alien_number, "color": "green", "points": 5, "speed": "slow"}
+    aliens.append(new_alien)
+
+for alien in aliens[:5]:
+    print(f"Alien {alien['number']}: {alien}") # This show unique alien details
+print("...")
+
+# Update the first 5 aliens to have different attributes
+for alien in aliens[:5]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+        alien['speed'] = 'medium'
+
+for alien in aliens[:5]:
+    print(f"Alien {alien['number']}: {alien}")
+print("...")
+
+# Update the next 5 aliens to have different attributes
+for alien in aliens[5:10]:
+    if alien['color'] == 'green':
+        alien['color'] = 'red'
+        alien['points'] = 15
+        alien['speed'] = 'fast'
+
+for alien in aliens[5:10]:
+    print(f"Alien {alien['number']}: {alien}")
+print("...")
+
+# Update the next 5 aliens to have different attributes
+for alien in aliens[10:15]:
+    if alien['color'] == 'green':
+        alien['color'] = 'blue'
+        alien['points'] = 20
+        alien['speed'] = 'very fast'
+
+for alien in aliens[10:15]:
+    print(f"Alien {alien['number']}: {alien}")
+print("...")

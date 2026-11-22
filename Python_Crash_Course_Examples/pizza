@@ -1,0 +1,39 @@
+# Another example of lists and dictionaries with pizza toppings
+
+pizzas = []
+
+pizza = {
+    "crust": "thin",
+    "toppings": ["cheese", "tomato"],
+    }
+
+for pizza_number in range(5):
+    new_pizza = {"number": pizza_number, "crust": pizza['crust'], "toppings": pizza['toppings'].copy()}
+    pizzas.append(new_pizza)
+
+for pizza in pizzas:
+    print(f"Pizza {pizza['number']}: {pizza}")
+
+# Update the first 3 pizzas to have additional toppings
+for pizza in pizzas[:3]:
+    pizza['toppings'].append('pepperoni')
+print("...")
+
+for pizza in pizzas[:3]:
+    print(f"Pizza {pizza['number']}: {pizza}")
+print("...")
+
+# Update the next 2 pizzas to have additional toppings
+for pizza in pizzas[3:5]:
+    pizza['toppings'].append('mushrooms')
+
+for pizza in pizzas[3:5]:
+    print(f"Pizza {pizza['number']}: {pizza}")
+print("...")
+
+# Add additional topping to all pizzas 
+for pizza in pizzas:
+    pizza['toppings'].append('olives')
+
+for pizza in pizzas:
+    print(f"Pizza {pizza['number']}: {pizza}")

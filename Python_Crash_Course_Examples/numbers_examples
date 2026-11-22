@@ -1,0 +1,13 @@
+# This is a simple Python program that demonstrates basic arithmetic operations and string formatting.
+
+print(2**3)
+print(2*4)
+print(4+4)
+print (16/2)
+
+# This program also demonstrates how to use variables and string formatting to create personalized messages.
+
+favorite_number = 7
+friends_name = "Alice"
+message = f"Hello, {friends_name}! My favorite number is {favorite_number}."
+print(message)

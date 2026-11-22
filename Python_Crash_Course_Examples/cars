@@ -1,0 +1,15 @@
+# These examples show 'If' Statements
+
+# Example 1: Checking for equality
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars: # This is a for loop that iterates through the list of cars
+    if car == 'bmw': # This is an if statement that checks if the car is 'bmw'
+        print(car.upper()) # This prints the car name in uppercase if it is 'bmw'
+    else: # This is the else statement that executes if the car is not 'bmw'
+        print(car.title()) # This prints the car name in title case if it is not 'bmw'
+
+# Example 2: Checking for inequality
+requested_topping = 'mushrooms' # This is a variable that stores the requested topping
+if requested_topping != 'anchovies': # This is an if statement that checks if the requested topping is not 'anchovies'
+    print("Hold the anchovies!") # This prints a message if the requested topping is not 'anchovies'
+

@@ -1,0 +1,11 @@
+# This program checks if a person is eligible to vote based on their age.
+
+age = 19
+if age >= 18:
+    print("You are eligible to vote.")
+    print("Please make sure to register to vote if you haven't already.")
+else:
+    print("You are not eligible to vote.")
+    print("You will be eligible to vote when you turn 18.")
+    
+

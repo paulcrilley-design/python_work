@@ -1,0 +1,38 @@
+# Will comment later
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]  # This creates a copy of the list
+
+print("My favorite foods are:")
+print(my_foods)
+for food in my_foods:
+    print(food)
+
+print("\nMy friend's favorite foods are:") # the \n creates a new line before printing the next statement
+print(friend_foods)
+for food in friend_foods:
+    print(food)
+
+my_foods.append('cannoli')  # Adds 'cannoli' to the end of my_foods
+friend_foods.append('ice cream')  # Adds 'ice cream' to the end of friend_foods
+print("\nMy favorite foods are:")
+print(my_foods,"\n\n") # The \n\n creates two new lines before printing the next statement
+print("\nMy friend's favorite foods are:")
+print(friend_foods,"\n\n")
+for food in my_foods:
+    print("\n", food)
+for food in friend_foods:
+    print("\n", food)
+
+# my_foods = ['pizza', 'falafel', 'carrot cake']
+# friend_foods = my_foods # As we do not add a Slice (i.e. [:]), this creates a reference to the same list, not a copy
+
+# my_foods.append('cannoli')  # Adds 'cannoli' to the end of my_foods
+# friend_foods.append('ice cream')  # Adds 'ice cream' to the end of friend_foods
+
+# Both lists will now show the same items because they reference the same list in memory
+
+# print("\nMy favorite foods are:")
+# print(my_foods,"\n\n") # The \n\n creates two new lines before printing the next statement
+# print("\nMy friend's favorite foods are:")
+# print(friend_foods,"\n\n")

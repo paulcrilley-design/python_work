@@ -1,0 +1,23 @@
+#
+
+current_users = ['admin', 'paul', 'john', 'mary', 'peter']
+# user_names = []
+# user_names.append('admin')
+
+for user_name in current_users:
+    if user_name == 'admin':
+        print(f"Hello {user_name.title()} do you want to see the status of the system?")
+    else:
+        print(f"Hello {user_name.title()} nice to see you")
+print("We need to find users to add to the system")
+
+new_user = input("Enter a new user name: ")
+if new_user not in current_users:
+    current_users.append(new_user)
+    print(f"Hello {new_user} welcome to the system")
+else:
+    print(f"Sorry {new_user} is already in the system")
+
+
+
+

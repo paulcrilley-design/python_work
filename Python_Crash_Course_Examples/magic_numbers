@@ -1,0 +1,34 @@
+# These examples show 'If' Statements
+
+# Example 1: Checking multiple conditions
+age = 19 # This is a variable that stores the age
+if age >= 18: # This is an if statement that checks if the age is greater than or equal to 18
+    print("You are old enough to vote!")
+
+# Example 2: Check that a value is not equal to a specific number
+answer = 17 # This is a variable that stores the answer
+if answer != 42: # This is an if statement that checks if the answer is not equal to 42
+    print("That is not the correct answer. Please try again!") # This prints a message if the answer is not 42
+
+# Example 3: Using 'and' to check multiple conditions
+age_0 = 22 # This is a variable that stores the first age
+age_1 = 18 # This is a variable that stores the second age
+if age_0 >= 21 and age_1 >= 21: # This is an if statement that checks if both ages are greater than or equal to 21
+    print("Both are old enough to drink!") # This prints a message if both ages are 21 or older
+    
+# Example 4: Using 'or' to check multiple conditions
+age_0 = 22 # This is a variable that stores the first age
+age_1 = 18 # This is a variable that stores the second age
+if age_0 >= 21 or age_1 >= 21: # This is an if statement that checks if at least one of the ages is greater than or equal to 21
+    print("At least one is old enough to drink!") # This prints a message if at least one age is 21 or older
+
+# Example 5: Using 'and' and 'or' together
+age_0 = 22 # This is a variable that stores the first age
+age_1 = 18 # This is a variable that stores the second age
+if (age_0 >= 21 and age_1 >= 21) or (age_0 >= 18 and age_1 >= 18): # This is an if statement that checks if both ages are greater than or equal to 21 or if both ages are greater than or equal to 18
+    print("Both are old enough to drink or at least one is old enough to vote!") # This prints a message if both ages are 21 or older or if both ages are 18 or older   
+
+# Example 6: Using 'not' to check for inequality
+age = 19 # This is a variable that stores the age
+if not age < 18: # This is an if statement that checks if the age is not less than 18
+    print("You are old enough to vote!") # This prints a message if the age is 18 or older

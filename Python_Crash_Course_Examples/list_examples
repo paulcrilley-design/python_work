@@ -1,0 +1,41 @@
+# This is an example of a list in Python. A list is a collection of items that can be of different data types. In this example, we have a list of family members.
+
+family_members = ['Paul', 'Kanlaya', 'Yotsaphat', 'Marcus', 'Kanlina', 'Shariyah', 'Tasanee', 'Aran']
+print(family_members[0], family_members[-1])
+print(f"The oldest family member is {family_members[0]} and the youngest family member is {family_members[-1]}.")
+print(f"{family_members[-1]} you have the world at your feet, if you put in the effort. Dad {family_members[0]} believes in you if you are trying.")
+
+# This section demonstrates how to remove and add items to a list using the pop() and insert() methods.
+popped_memmber = family_members.pop(2)
+print(f"After removing {popped_memmber}, the family members are now: {family_members}.")
+print(popped_memmber)
+
+family_members.insert(2, popped_memmber)
+print(f"After adding {popped_memmber} the family members are now: {family_members}.")
+
+family_members.remove('Paul')
+print(f"After removing 'Paul', the family members are now: {family_members}.")
+
+family_members.append('Paul')
+print(f"After adding 'Paul' back, the family members are now: {family_members}.")
+
+# This section demonstrates how to move an item from the end of the list to the front of the list.
+family_members.insert(0, family_members.pop(-1))
+print(f"After moving 'Paul' to the front, the family members are now: {family_members}.")
+
+# This section demonstrates how to sort items in a list.
+family_members_sort = family_members.copy()
+family_members_sort.sort()
+print(f"The family members permanently sorted in ascending order are: {family_members_sort}.")
+print(f"The family members permanently sorted in descending order are: {sorted(family_members_sort, reverse=True)}.")
+print(f"The family members temporarily sorted in ascending order are: {sorted(family_members)}.")
+print(family_members)
+print(f"The family members in reverse order are: {list(reversed(family_members))}.")
+length = len(family_members)
+print(f"The length of the family members list is: {length}.")   
+
+print(f"The first three family members are: {family_members[:3]}.")
+print(f"The middle three family members are: {family_members[3:6]}.")
+print(f"The last two family members are: {family_members[-2:]}.")
+
+

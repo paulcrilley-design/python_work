@@ -1,0 +1,24 @@
+# This example shows how to use the if-elif-else statement
+
+alien_color = ['green', 'blue', 'yellow', 'red']
+alien_color = input("Enter the color of the alien: ")
+if alien_color.lower() == 'green':  # This is the first condition of the if statement
+    print("The alien is green you have 5 points")
+    alien_color = 'green'
+elif alien_color.lower() == 'blue': # This is the second condition of the if statement 
+    print("The alien is blue you have 10 points")
+    alien_color = 'blue'
+elif alien_color.lower() == 'yellow':
+    print("The alien is yellow you have 15 points")
+    alien_color = 'yellow'
+elif alien_color.lower() == 'red':
+    print("The alien is redyou have 20 points")
+    alien_color = 'red'
+else: # This is the last condition of the if statement 
+    print("The alien is not a color you have 0 points")
+    alien_color = 'not a color'
+
+print(f"\nThe alien is {alien_color}")
+
+
+

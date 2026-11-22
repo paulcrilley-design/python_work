@@ -1,0 +1,74 @@
+#
+# Here we have adjusted the fomat of the dictionary as it has many items. This makes the code more readable
+# favourite_languages = {
+#    'jen': 'python',
+#    'sarah': 'c',
+#    'edward': 'rust',
+#    'phil': 'python',
+#   }
+# language = favourite_languages['sarah'].title()
+# print(f"Sarah's favourite programming language is {language}")
+
+# If a Key/value pair doesnt exist then using square brackets to retrieve a non-existent pair will result in an error
+# The 'get' command can then be used, as in the following example
+
+# name_value = favourite_languages.get('name', 'No name assigned !')
+# print(name_value)
+
+# We can also use the 'get' command to check if a key exists in the dictionary. If it does, we can retrieve its value, otherwise we can provide a default value.
+# language_value = favourite_languages.get('sarah', 'No language assigned !')
+#print(f"Sarah's favourite programming language is {language_value.title()}")
+
+# for name, language in favourite_languages.items():
+#    print(f"{name.title()}'s favourite programming language is {language.title()}.")
+
+# If we dont need the key/value pair, we can iterate through the keys
+# for name in favourite_languages.keys():
+#    print(name.title())
+
+# this is the default behaviour of a dictionary where it only iterates through the keys, so we can also just write:
+# for name in favourite_languages:
+#    print(name.title())
+
+# friends = ['phil', 'sarah']
+# for name in favourite_languages.keys():
+#    print(f"Hi {name.title()}.")
+
+#    if name in friends:
+#        language = favourite_languages[name].title()
+#        print(f"\t{name.title()}, I see you love {language}!")
+
+#if 'erin' not in favourite_languages.keys():
+#    print("Erin, please take our poll!")
+
+# for name in sorted(favourite_languages.keys()):
+#    print(f"{name.title()}, thank you for taking the poll.")
+
+# print("\nThe following languages have been mentioned in the poll:")
+#  for language in sorted(set(favourite_languages.values())): 
+# the sorted() and set() functions are used to :
+# remove duplicates from the list of values in the dictionary, 
+# so that each language is only printed once,
+# and place them in alphabetical order 
+#    print(language.title(), end = " ") # prints all the values in the dictionary on the same line, separated by a space, instead of each value on a new line. The 'end' parameter is used to specify what should be printed at the end of each value, in this case a space.
+# print() # this is used to print a new line after the last value in the dictionary, so that the next output will be printed on a new line.
+
+# This looks at individuals having more than one favourite language
+
+favourite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['rust', 'go'],
+    'phil': ['python', 'javascript'],
+    }
+
+for name, languages in favourite_languages.items():
+    if len(languages) == 1:
+        print(f"\n{name.title()}'s favourite language is:")
+    else:
+        print(f"\n{name.title()}'s favourite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
+
+
+

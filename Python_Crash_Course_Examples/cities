@@ -1,0 +1,9 @@
+# This is an example of using 'Break'
+
+prompt = "\nPlease enter the name of a city you have visited (or 'quit' to exit): "
+while True:
+    city = input(prompt)
+    if city.lower() == 'quit':
+        break
+    else:
+        print(f"I've been to {city.title()}!")

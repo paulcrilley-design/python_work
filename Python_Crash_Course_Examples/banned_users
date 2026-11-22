@@ -1,0 +1,21 @@
+# More examples of loops and conditions
+
+# Example 1: Checking for membership in a list
+requested_toppings = ['mushrooms', 'onions', 'pineapple', 'extra cheese'] # This is a list of requested toppings
+if 'mushrooms' in requested_toppings: # This is an if statement that checks if 'mushrooms' is in the list of requested toppings
+    print("Adding mushrooms.") # This prints a message if 'mushrooms' is in the list
+
+if 'pepperoni' in requested_toppings: # This is an if statement that checks if 'pepperoni' is in the list of requested toppings
+    print("Adding pepperoni.") # This prints a message if 'pepperoni' is in the list
+
+if 'extra cheese' in requested_toppings: # This is an if statement that checks if 'extra cheese' is in the list of requested toppings
+    print("Adding extra cheese.") # This prints a message if 'extra cheese' is in the list
+    
+print("\nFinished making your pizza!") # This prints a message indicating that the pizza is finished
+
+# Example 2: Banning users from a list
+banned_users = ['andrew', 'carolina', 'david'] # This is a list of banned users
+user = 'marie' # This is a variable that stores the name of the user
+if user not in banned_users: # This is an if statement that checks if the user is not in the list of banned users
+    print(f"{user.title()}, you can post a response if you wish.") # This prints a message indicating that the user can post a response
+

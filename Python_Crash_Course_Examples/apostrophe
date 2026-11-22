@@ -1,0 +1,4 @@
+# This program demonstrates how to handle apostrophes in strings in Python.
+
+message = "One of Python's strenghts is its diverse community"
+print(message)

@@ -1,0 +1,38 @@
+# This example explains how to use 'for loops' while working with lists
+
+magicians = ['alice', 'david', 'carolina']
+
+for magician in magicians:
+    print(magician)
+    print(f"{magician.title()}, that was a great trick!")
+    print(f"I can't wait to see your next trick, {magician.title()}.\n")
+
+print("Thank you, everyone. That was a great magic show!")
+
+# this example shows an indentation error. (note it is 'commented out' to avoid an error when running the code)
+
+# for magician in magicians:
+# print(magician)
+# run, these two lives of code will cause an indentation error because the second line is not indented properly. In Python, indentation is very important and is used to define the blocks of code that belong to a particular control structure, such as a loop or a function.
+
+# this next example is valid python code but the result is not what you might expect. The second line of code is not indented properly, so it is not part of the for loop. Instead, it will be executed only once, after the for loop has completed.
+
+for magician in magicians:
+    print(magician)
+    print(f"{magician.title()}, that was a great trick!")
+print(f"I can't wait to see your next trick, {magician.title()}.\n")
+
+# more examples of for loops can be found in the 'for_loops' file in this directory.
+
+pizzas = ['pepperoni', 'cheese', 'mushroom']
+for pizza in pizzas:
+    print(pizza)
+    print(f"I like {pizza} pizza.")
+print("I really love pizza!")
+
+animals = ['dog', 'cat', 'rabbit']
+for animal in animals:
+    print(animal)
+    print(f"A {animal} would make a great pet.")
+print("Any of these animals would make a great pet!")   
+

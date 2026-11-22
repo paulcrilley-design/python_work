@@ -1,0 +1,25 @@
+# This program demonstrates various string methods in Python, including title case, lower case, upper case, and stripping whitespace.
+
+name = "ada lovelace"
+first_name = "ada"
+last_name = "lovelace"
+full_name = f"{first_name} {last_name}"
+message = f"Hello, {full_name.title()}!"
+favourite_language = "     python       "
+
+print(name.title())
+print(name.upper())
+print(name.lower())
+print(full_name.title())
+print("Hello, " + full_name.title() + "!")
+print(message)
+
+print("\tPython")
+print("Languages:\n\tPython\n\tC\n\tJavaScript")
+print(favourite_language.lstrip())
+print(favourite_language.rstrip())
+print(favourite_language.strip())
+
+nostarch_url = "https://nostarch.com"
+nostarch_url = nostarch_url.removeprefix("https://")
+print(nostarch_url)
